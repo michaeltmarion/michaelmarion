@@ -1,0 +1,12 @@
+extends layout
+block styles
+block scripts
+block content
+  h1= title
+  each post in posts
+    div.post
+      h2 
+        a(href = '/blog/#{slug}') #{post.title}
+      p #{post.snippet}
+    
+  

@@ -1,0 +1,42 @@
+h5 {
+  text-transform: uppercase;
+  font-weight: 900;
+  border-bottom: 1px solid #546E7A;
+  color: #546E7A;
+  padding-bottom: 0.500em;
+}
+
+#introduction {
+    font-size: 2.500em;
+    font-weight: 100;
+    padding: 4.50em 0em;
+    height: 10.00em;
+}
+
+#introduction span#activity {
+    color: #80CBC4;
+}
+
+div#latest {
+  padding: 4.750em 0em;
+}
+
+div#latest h1 {
+  font-weight: 900;
+  margin-top: 0.750em;
+}
+
+div#latest p {
+  font-size: 1.750em;
+  margin-top: 0.750em;
+}
+
+ul#icons {
+  text-align: left;
+}
+
+ul#icons li {
+  display: inline-block;
+  padding: 0 3.00em 0 0;
+  font-size: 3.00em;
+}

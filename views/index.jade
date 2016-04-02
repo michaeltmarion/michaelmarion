@@ -1,0 +1,11 @@
+extends layout
+
+block styles
+  link(rel = 'stylesheet', href = '/stylesheets/pages/index.css')
+
+block scripts
+  script(type = 'text/javascript', src = 'javascripts/index.js')
+
+block content
+  include partials/pages/index/introduction
+  include partials/pages/index/latest
