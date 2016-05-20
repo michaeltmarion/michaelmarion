@@ -56,8 +56,8 @@ div.navbar ul li {
     font-weight: 600;
 }
 
-div.navbar ul li i {
-  font-size: 1.500em;
+div.navbar ul li a {
+  font-size: 1.250em;
   margin-top: 2px;
 }
 
