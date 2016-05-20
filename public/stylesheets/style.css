@@ -66,8 +66,12 @@ div.navbar-collapse {
   padding-left: 0px;
 }
 
-div.navbar .collapsing, div.navbar .collapse.in {
-    background: #f5f5f5
+div.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+div.navbar-collapse.collapse.in {
+  text-align: center;
 }
 
 div.container {
