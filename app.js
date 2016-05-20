@@ -4,10 +4,19 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var Poet = require('poet');
 
-var routes = require('./routes/index');
-
+// Application
 var app = express();
+
+// Poet
+var poet = Poet(app, {
+  postsPerPage: 5,
+  posts: __dirname + '/posts',
+  metaFormat: 'json'
+});
+
+poet.watch().init();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -17,7 +26,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+// Routing
+var routes = require('./routes/routes')(app);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -42,6 +52,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;

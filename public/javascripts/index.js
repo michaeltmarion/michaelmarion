@@ -4,7 +4,7 @@ var _INDEX = function() {
       _animate = 500;
 
   var _colors = [
-    '#80CBC4'
+    '#6A28BC'
     // '#5820CC',
     // '#72CF70', // Green
     // '#7F3D7F', // Purple

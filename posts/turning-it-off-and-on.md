@@ -1,9 +1,9 @@
 {{{
-    "title"    : "Turning It Off And Back On",
-    "tags"     : [],
-    "category" : "Updates",
-    "date"     : "2 February 2016",
-    "snippet"  : ""I'm sitting in a dark tube of humans.""
+  "title" : "Turning It Off And On",
+  "tags" : [],
+  "category" : "updates",
+  "date" : "6 February 2016",
+  "description" : "I'm sitting in a dark tube of humans."
 }}}
 
 "I'm sitting in a dark tube of humans."

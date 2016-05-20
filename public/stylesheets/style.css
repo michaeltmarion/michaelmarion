@@ -1,18 +1,19 @@
 html, body {
     height: 100%;
     width: 100%;
-    background: #263238;
-    color: #ddd;
+    margin: 0;
+    padding: 0;
+    background: #FDFDFD;
+    color: #353535;
+    font-family: -apple-system, "SF UI Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 a {
-    color: #546E7A !important;
-    text-decoration: none
+  text-decoration: none
 }
 
 a:hover {
-    color: #607D8B !important;
-    text-decoration: none
+  text-decoration: none
 }
 
 .transition {
@@ -22,23 +23,37 @@ a:hover {
     transition: all 100ms linear 100ms
 }
 
+div.spacer {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 1.50em;
+  margin-bottom: 1.50em;
+  border-bottom: 2px solid #eee;
+}
+
+div#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+div#content {
+  padding-bottom: 2.000em;
+}
+
 div.navbar {
     background: none;
     border: none;
-    text-transform: uppercase;
     font-size: 0.750em;
     padding: 1.250em 0em;
     margin-bottom: 0 auto !important
 }
 
 div.navbar .navbar-brand {
-    font-size: 1.250em;
-    letter-spacing: 0.15em
+    font-size: 10.00em;
 }
 
 div.navbar ul li {
-    font-weight: 900;
-    letter-spacing: 0.10em;
+    font-weight: 600;
 }
 
 div.navbar ul li i {
@@ -46,20 +61,25 @@ div.navbar ul li i {
   margin-top: 2px;
 }
 
+div.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 div.navbar .collapsing, div.navbar .collapse.in {
     background: #f5f5f5
 }
 
+div.container {
+  max-width: 768px;
+}
+
 div#footer {
-    position: relative;
-    margin-top: 5.000em;
-    width: 100%;
-    border-top: 1px solid #5820CC;
-    background: #5820CC;
-    background: -moz-linear-gradient(-45deg, #6D28FF 0%, #5820CC 100%);
-    background: -webkit-linear-gradient(-45deg, #6D28FF 0%, #5820CC 100%);
-    background: linear-gradient(135deg, #6D28FF 0%, #5820CC 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6D28FF', endColorstr='#5820CC', GradientType=1)
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 div#footer ul {
@@ -68,15 +88,10 @@ div#footer ul {
 }
 
 div#footer ul li {
-    font-size: 2.000em;
+    font-size: 1.50em;
     display: inline-block;
-    padding: 1.000em 2.750em
 }
 
-div#footer a {
-    color: rgba(0, 0, 0, 0.35) !important
-}
-
-div#footer a:hover {
-    color: #FFF !important
+div#footer ul li:not(:last-child) {
+  margin-right: 2.50em;
 }

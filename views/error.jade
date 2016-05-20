@@ -1,8 +1,9 @@
 extends layout
 block styles
-  link(rel = 'stylesheet', href = '/stylesheets/pages/post.css')
+  link(rel = 'stylesheet', href = '/stylesheets/pages/error.css')
 block scripts
 block content
   h5= message
     span.pull-right= error.status
-  pre #{error.stack}
+  div#stacktrace
+    pre #{error.stack}

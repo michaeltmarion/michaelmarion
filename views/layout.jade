@@ -3,33 +3,35 @@ html(class = 'no-js')
     meta(charset = 'utf-8')
     meta(http-equiv = 'X-UA-Compatible', content = 'IE = edge')
 
-    title
+    title=title
 
     meta(name = 'description', content = '')
     meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
     
-    script(src = 'https://use.typekit.net/kdg1fyj.js')
+    script(src="https://use.typekit.net/wab1zzq.js")
     script.
       try{Typekit.load({ async: true });}catch(e){}
 
-    link(rel = 'stylesheet', href = 'stylesheets/reset.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-    link(rel = 'stylesheet', href = 'stylesheets/style.css')
+    link(rel = 'stylesheet', href = '../../stylesheets/reset.css')
+    link(rel = 'stylesheet', href = '../../stylesheets/style.css')
     block styles
     
-    //- script(src = 'js/vendor/modernizr-2.6.2.min.js')
-
   body
     //if lt IE 8
       p.chromeframe.
         You are using an <strong>outdated</strong> browser.
         Please <a href = "http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
-        
-    include partials/navigation
-    div.container
-      block content 
+    div#wrapper
+      div#header
+        include partials/navigation
+      div#content
+        div.container
+          block content 
+      div#footer
+        include partials/footer
 
     script(src = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
     script window.jQuery || document.write('<script src = "js/vendor/jquery-1.10.2.min.js"><\/script>')

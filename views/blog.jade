@@ -1,12 +1,13 @@
 extends layout
 block styles
+  link(rel = 'stylesheet', href = 'stylesheets/pages/blog.css')
 block scripts
 block content
-  h1= title
   each post in posts
     div.post
-      h2 
-        a(href = '/blog/#{slug}') #{post.title}
-      p #{post.snippet}
+      a.transition(href = '/post/#{post.slug}')
+        div.content.transition
+          h1 #{post.title}
+          p #{post.description}
     
   
