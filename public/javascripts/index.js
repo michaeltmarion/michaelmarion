@@ -58,4 +58,5 @@ var _INDEX = function() {
   };
 }();
 
+sr.reveal('#introduction');
 _INDEX.start();

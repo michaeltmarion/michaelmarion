@@ -1,32 +1,19 @@
-div.post {
+div.post div.content {
+  margin-bottom: 0.750em;
+}
 
+div.post div.content h1 {
+  font-size: 1.45em;
+  font-weight: 500;
+}
+
+div.post div.content p {
+  margin-top: 0.500em;
+  opacity: 0.7;
 }
 
 div.post a {
-  display: block;
-  padding: 1.000em 0em;
-  color: #353535;
-  border-bottom: 1px solid #eee;
-}
-
-div.post a:hover {
-  background: #337ab7;
-}
-
-div.post a:hover div.content {
-  color: white;
-  padding-left: 2.000em;
-}
-
-div.post div.content {
-}
-
-div.post h1 {
-  font-size: 1.45em;
-  font-weight: 600;
-}
-
-div.post p {
-  margin-top: 0.500em;
-  opacity: 0.7;
+  font-weight: 500;
+  font-size: 0.90em;
+  text-transform: uppercase;
 }

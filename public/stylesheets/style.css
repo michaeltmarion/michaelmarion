@@ -48,8 +48,8 @@ div.navbar {
     margin-bottom: 0 auto !important
 }
 
-div.navbar .navbar-brand {
-    font-size: 3.00em;
+div.navbar .navbar-brand a.nameplate {
+    font-size: 6.50em;
 }
 
 div.navbar ul li {
@@ -57,7 +57,8 @@ div.navbar ul li {
 }
 
 div.navbar ul li a {
-  font-size: 1.250em;
+  text-transform: uppercase;
+  font-size: 0.90em;
   margin-top: 2px;
 }
 
