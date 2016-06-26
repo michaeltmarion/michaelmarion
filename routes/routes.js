@@ -1,4 +1,12 @@
+var contentful = require('contentful');
+
 module.exports = function(app) {
+
+  var client = contentful.createClient({
+    space: 'jhj1hljs8bdd',
+    accessToken: '33b1967c7343ab8d0358daa7aa8e4373f01d464f16244c43a89ddb89e70e3763'
+  })
+
   app.get('/', function(req, res, next) {
     res.render('index', {
       'title': 'Michael Marion',
@@ -12,8 +20,12 @@ module.exports = function(app) {
   });
 
   app.get('/post/:id', function(req, res) {
-    res.render('post', {
-      'title': title,
-    })
+    client.getEntry(req.params.id).then(function(entry) {
+      console.log(entry);
+      res.render('post', {
+        'title': title,
+      });
+    });
   });
+
 }
