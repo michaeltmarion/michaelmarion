@@ -1,14 +1,21 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background: #FDFDFD;
-    color: #353535;
+    color: #151515;
     font-family: -apple-system, "SF UI Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
+body {
+  display: flex;
+}
+
 a {
+  color: #FF2D55;
+  font-weight: 600;
   text-decoration: none
 }
 
@@ -16,87 +23,15 @@ a:hover {
   text-decoration: none
 }
 
+div.container {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 5.00em;
+}
+
 .transition {
     -webkit-transition: all 100ms linear 100ms;
     -moz-transition: all 100ms linear 100ms;
     -o-transition: all 100ms linear 100ms;
     transition: all 100ms linear 100ms
-}
-
-div.spacer {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 1.50em;
-  margin-bottom: 1.50em;
-  border-bottom: 1px solid #eee;
-}
-
-div#wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-div#content {
-padding-bottom: 7.500em;
-}
-
-div.navbar {
-    background: none;
-    border: none;
-    font-size: 0.750em;
-    padding: 1.250em 0em;
-    margin-bottom: 0 auto !important
-}
-
-div.navbar .navbar-brand a.nameplate {
-    font-size: 6.50em;
-}
-
-div.navbar ul li {
-    font-weight: 600;
-}
-
-div.navbar ul li a {
-  text-transform: uppercase;
-  font-size: 0.90em;
-  margin-top: 2px;
-}
-
-div.navbar-collapse {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-div.navbar-default .navbar-collapse {
-  border-color: transparent;
-}
-
-div.navbar-collapse.collapse.in {
-  text-align: center;
-}
-
-div.container {
-  max-width: 768px;
-}
-
-div#footer {
-  width: 100%;
-  height: 3.000em;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-div#footer ul {
-    text-align: center;
-    margin: 0px
-}
-
-div#footer ul li {
-    font-size: 1.50em;
-    display: inline-block;
-}
-
-div#footer ul li:not(:last-child) {
-  margin-right: 2.50em;
 }

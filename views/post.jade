@@ -1,9 +1,12 @@
 extends layout
+
 block styles
   link(rel = 'stylesheet', href = '../stylesheets/pages/post.css')
+
 block scripts
+
 block content
-  h1 #{post.title}
-  div.spacer
-  #{post.content}
-  a#back(href='/blog') Back
+  div#post
+    h1 #{content.title}
+    div.content
+      !{content.body}

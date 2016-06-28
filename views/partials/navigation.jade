@@ -1,14 +1,14 @@
-.navbar.navbar-default(role = 'navigation')
-  .container
-    .navbar-header
-      button.navbar-toggle(type = 'button', data-toggle = 'collapse', data-target = '.navbar-collapse')
-        span.sr-only Toggle
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      .navbar-brand 
-        a.nameplate.transition(href = "/") mm
-    .navbar-collapse.collapse
-      ul.nav.navbar-nav.navbar-right
-        li.transition
-          a(href = '/blog') Blog
+div#navigation
+  div.nameplate
+    h1 m
+  div.posts 
+    ul
+      each post in posts
+        li
+          a.post(href = '/post/#{post.id}')
+            div.date
+              h2 #{post.day}
+              h3 #{post.month}
+            div.content
+              h1 #{post.title}
+              p #{post.snippet}

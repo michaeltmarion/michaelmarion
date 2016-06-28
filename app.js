@@ -16,8 +16,55 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routing
-var routes = require('./routes/routes')(app);
+// Contentful CMS
+var contentful = require('contentful');
+var marked = require('marked');
+
+var client = contentful.createClient({
+  space: 'jhj1hljs8bdd',
+  accessToken: '33b1967c7343ab8d0358daa7aa8e4373f01d464f16244c43a89ddb89e70e3763'
+});
+
+app.get('/', function(req, res) {
+  client.getEntries().then(function (entries) {
+    var posts = [];
+    entries.items.forEach(function (entry) {
+      posts.push({
+        'title'    : entry.fields.title,
+        'day'      : day(new Date(entry.fields.date)),
+        'month'    : month(new Date(entry.fields.date)),
+        'snippet'  : entry.fields.snippet,
+        'body'     : marked(entry.fields.body),
+        'id'       : entry.sys.id
+      });
+    });
+    res.render('index', {
+      'title': 'Michael Marion',
+      'posts': posts
+    });
+  });
+});
+
+app.get('/post/:id', function(req, res) {
+  client.getEntries().then(function (entries) {
+    var posts = [];
+    entries.items.forEach(function (entry) {
+      posts.push({
+        'title'    : entry.fields.title,
+        'day'      : day(new Date(entry.fields.date)),
+        'month'    : month(new Date(entry.fields.date)),
+        'snippet'  : entry.fields.snippet,
+        'body'     : marked(entry.fields.body),
+        'id'       : entry.sys.id
+      });
+    });
+    res.render('post', {
+      'title' : 'Michael Marion',
+      'posts' : posts,
+      'content' : posts[0]
+    });
+  });
+});
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -44,3 +91,27 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+var day = function(date) {
+  return date.getDate();
+}
+
+var month = function(date) {
+  var months = ['January', 'February', 'March',
+                'April', 'May', 'June', 'July',
+                'August', 'September', 'October',
+                'November', 'December'];
+  return months[date.getMonth()];
+}
+
+var datify = function(created) {
+  var date = new Date(created);
+  var d = date.getDate();
+  var months = ['January', 'February', 'March',
+                'April', 'May', 'June', 'July',
+                'August', 'September', 'October',
+                'November', 'December'];
+  var m = months[date.getMonth()];
+  var y = date.getFullYear();
+  return d + ' ' + m + ' ' + y;
+}
