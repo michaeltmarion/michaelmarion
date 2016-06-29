@@ -17,48 +17,24 @@ a {
   color: #FF2D55;
   font-weight: 600;
   text-decoration: none
+  -webkit-transition: all 200ms linear 200ms;
+  -moz-transition: all 200ms linear 200ms;
+  -o-transition: all 200ms linear 200ms;
+  transition: all 200ms linear 200ms;
 }
 
 a:hover {
-  text-decoration: none
-}
-
-div#nameplate {
-  position: fixed;
-  z-index: 3;
-  left: 2.10em;
-  top: 2.10em;
-  width: 48px;
-  height: 48px;
-  background: white;
-  border-radius: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-div#nameplate:hover {
-  cursor: pointer;
-}
-
-div#nameplate.menu {
-  background: none;
-  color: #007AFF;
-}
-
-div#nameplate h1 {
-  font-size: 1.500em;
-  color: #202020;
-}
-
-div#nameplate.menu h1 {
-  color: #007AFF;
+  color: #C22350;
+  text-decoration: none;
+  -webkit-transition: all 200ms linear 200ms;
+  -moz-transition: all 200ms linear 200ms;
+  -o-transition: all 200ms linear 200ms;
+  transition: all 200ms linear 200ms;
 }
 
 .transition {
-    -webkit-transition: all 100ms linear 100ms;
-    -moz-transition: all 100ms linear 100ms;
-    -o-transition: all 100ms linear 100ms;
-    transition: all 100ms linear 100ms
+    -webkit-transition: all 200ms linear 200ms;
+    -moz-transition: all 200ms linear 200ms;
+    -o-transition: all 200ms linear 200ms;
+    transition: all 200ms linear 200ms
 }

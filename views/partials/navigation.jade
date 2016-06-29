@@ -1,4 +1,6 @@
 div#navigation.transition
+  div#nav-nameplate.nameplate.transition
+    h1 m
   div.posts 
     ul
       each post in posts
@@ -8,7 +10,9 @@ div#navigation.transition
               div.date-inner
                 h2 #{post.day}
                 h3 #{post.month}
-            div.content
-              div.content-inner
+            div.metadata
+              div.title
                 h1 #{post.title}
-                p #{post.snippet}
+              //- div.snippet.hidden-xs.hidden-sm.hidden-md.hidden-xl
+              //-   p #{post.snippet}
+            

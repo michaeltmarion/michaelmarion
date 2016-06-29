@@ -1,11 +1,34 @@
-div#overlay {
-  position: fixed;
-  height: 100%;
+div.nameplate {
+  z-index: 3;
+  opacity: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-metadata: center;
+  text-align: center;
 }
 
-div#overlay.showing {
-  background-color: rgba(0, 0, 0, 0.80);
+div.nameplate:hover {
+  cursor: pointer;
+}
+
+div.nameplate h1 {
+  -webkit-animation-name: colorwheel;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+
+  animation-name: colorwheel;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+  font-size: 2.00em;
+  margin-top: 1.00em;
+}
+
+div#metadata-nameplate.invisible {
+  opacity: 0;
 }
 
 div#navigation {
@@ -17,12 +40,6 @@ div#navigation {
   color: #dadada;
   z-index: 2;
   overflow-y: scroll;
-}
-
-@media screen and (min-width: 768px) {
-  div#navigation {
-    max-width: 500px;
-  }
 }
 
 div#navigation.showing {
@@ -45,12 +62,11 @@ div#navigation div.posts ul li a:hover {
 }
 
 div#navigation div.posts ul li a div.date {
-  color: #007AFF;
+  color: #FF2D55;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  text-align: center;
 }
 
 div#navigation div.posts ul li a div.date-inner {
@@ -69,22 +85,55 @@ div#navigation div.posts ul li a div.date-inner h3 {
   font-weight: 500;
 }
 
-div#navigation div.posts ul li a div.content {
+div#navigation div.posts ul li a div.metadata {
   flex: 4;
+  display: flex;
+  text-align: left;
+}
+
+div#navigation div.posts ul li a div.metadata div.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 2;
 }
 
-div#navigation div.posts ul li a div.content div.content-inner {
+div#navigation div.posts ul li a div.metadata div.title h1 {
+  font-size: 1.50em;
+  font-weight: 300;
 }
 
-div#navigation div.posts ul li a div.content div.content-inner h1 {
-  font-size: 1.15em;
-  font-weight: 700;
-  margin-bottom: 0.30em;
+div#navigation div.posts ul li a div.metadata div.snippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
 }
 
-div#navigation div.posts ul li a div.content div.content-inner p {
-  font-weight: 400;
+div#navigation div.posts ul li a div.metadata div.snippet p {
+  font-weight: 300;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes colorwheel {
+  0%   { color: rgba(255, 59, 48);  }
+  14%  { color: rgba(255, 149, 0);  }
+  28%  { color: rgba(255, 204, 0);  }
+  42%  { color: rgba(76, 217, 100); }
+  56%  { color: rgba(90, 200, 250); }
+  70%  { color: rgba(0, 122, 255);  }
+  84%  { color: rgba(88, 86, 214);  }
+  100% { color: rgba(255, 45, 85); }
+}
+
+/* Standard syntax */
+@keyframes colorwheel {
+  0%   { color: rgba(255, 59, 48);  }
+  14%  { color: rgba(255, 149, 0);  }
+  28%  { color: rgba(255, 204, 0);  }
+  42%  { color: rgba(76, 217, 100); }
+  56%  { color: rgba(90, 200, 250); }
+  70%  { color: rgba(0, 122, 255);  }
+  84%  { color: rgba(88, 86, 214);  }
+  100% { color: rgba(255, 45, 85); }
 }
