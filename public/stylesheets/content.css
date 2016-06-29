@@ -2,8 +2,18 @@ div#content {
   width: 100%
 }
 
+div#content.prevent-scroll {
+  overflow-y: hidden;
+}
+
 div#content div.container {
   width: 45%;
   margin: 0 auto;
   padding-top: 4.0em;
+}
+
+@media screen and (max-width: 768px) {
+  div#content div.container {
+    width: 95%;
+  }
 }

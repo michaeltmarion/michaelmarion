@@ -24,8 +24,8 @@ a:hover {
 }
 
 div#nameplate {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 3;
   left: 2.10em;
 }
 
