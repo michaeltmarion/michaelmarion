@@ -3,7 +3,7 @@ html(class = 'no-js')
     meta(charset = 'utf-8')
     meta(http-equiv = 'X-UA-Compatible', content = 'IE = edge')
 
-    title=title
+    title=page
 
     meta(name = 'description', content = '')
     meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
@@ -13,6 +13,7 @@ html(class = 'no-js')
       try{Typekit.load({ async: true });}catch(e){}
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    script(src="../../javascripts/navigation.js")
 
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
@@ -28,6 +29,8 @@ html(class = 'no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href = "http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
+    div#nameplate.nameplate
+      h1 m
     include partials/navigation
     div#content
       div.container

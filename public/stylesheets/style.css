@@ -23,10 +23,24 @@ a:hover {
   text-decoration: none
 }
 
-div.container {
-  width: 55%;
-  margin: 0 auto;
-  padding-top: 5.00em;
+div#nameplate {
+  position: absolute;
+  z-index: 1;
+  left: 2.10em;
+}
+
+div#nameplate:hover {
+  cursor: pointer;
+}
+
+div#nameplate h1 {
+  font-size: 3.00em;
+  color: #202020;
+  padding: 0 4px;
+}
+
+div#nameplate h1.menu {
+  color: #007AFF;
 }
 
 .transition {

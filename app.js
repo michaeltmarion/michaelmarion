@@ -28,6 +28,7 @@ var client = contentful.createClient({
 app.get('/', function(req, res) {
   client.getEntries().then(function (entries) {
     var posts = [];
+    // Retrieve all entries.
     entries.items.forEach(function (entry) {
       posts.push({
         'title'    : entry.fields.title,
@@ -38,9 +39,13 @@ app.get('/', function(req, res) {
         'id'       : entry.sys.id
       });
     });
-    res.render('index', {
-      'title': 'Michael Marion',
-      'posts': posts
+    // Render the response.
+    res.render('post', {
+      'page' : 'Michael Marion',
+      'posts': posts,
+      'title': posts[0].title,
+      'date' : datify(posts[0].date),
+      'body' : marked(posts[0].body)
     });
   });
 });
@@ -48,6 +53,7 @@ app.get('/', function(req, res) {
 app.get('/post/:id', function(req, res) {
   client.getEntries().then(function (entries) {
     var posts = [];
+    // Retrieve all entries.
     entries.items.forEach(function (entry) {
       posts.push({
         'title'    : entry.fields.title,
@@ -58,10 +64,16 @@ app.get('/post/:id', function(req, res) {
         'id'       : entry.sys.id
       });
     });
+    // Find the post to display as content.
+    var content = find(posts, req.params.id);
+    console.log(content);
+    // Render the response;
     res.render('post', {
-      'title' : 'Michael Marion',
-      'posts' : posts,
-      'content' : posts[0]
+      'page' : 'Michael Marion',
+      'posts': posts,
+      'title': content.title,
+      'date' : datify(content.date),
+      'body' : marked(content.body)
     });
   });
 });
@@ -92,6 +104,11 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
+
+/* ----------------- *\
+   Utility Functions
+\* ----------------- */
+
 var day = function(date) {
   return date.getDate();
 }
@@ -106,12 +123,17 @@ var month = function(date) {
 
 var datify = function(created) {
   var date = new Date(created);
-  var d = date.getDate();
   var months = ['January', 'February', 'March',
                 'April', 'May', 'June', 'July',
                 'August', 'September', 'October',
                 'November', 'December'];
-  var m = months[date.getMonth()];
-  var y = date.getFullYear();
-  return d + ' ' + m + ' ' + y;
+  return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+}
+
+var find = function(posts, param) {
+  for (var idx in posts) {
+    if (posts[idx].id && posts[idx].id === param) {
+      return posts[idx];
+    }
+  };
 }

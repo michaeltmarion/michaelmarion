@@ -1,14 +1,14 @@
-div#navigation
-  div.nameplate
-    h1 m
+div#navigation.transition
   div.posts 
     ul
       each post in posts
         li
           a.post(href = '/post/#{post.id}')
             div.date
-              h2 #{post.day}
-              h3 #{post.month}
+              div.date-inner
+                h2 #{post.day}
+                h3 #{post.month}
             div.content
-              h1 #{post.title}
-              p #{post.snippet}
+              div.content-inner
+                h1 #{post.title}
+                p #{post.snippet}
