@@ -2,7 +2,7 @@ $(document).on('ready', function() {
   $('#nameplate').click(function() {
     $('#navigation').toggleClass('showing');
     $('#overlay').toggleClass('showing');
-    $('#nameplate h1').toggleClass('menu');
+    $('#nameplate').toggleClass('menu');
     $('#content').toggleClass('prevent-scroll');
   });
 });
