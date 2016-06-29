@@ -16,20 +16,20 @@ body {
 a {
   color: #FF2D55;
   font-weight: 600;
-  text-decoration: none
-  -webkit-transition: all 200ms linear 200ms;
-  -moz-transition: all 200ms linear 200ms;
-  -o-transition: all 200ms linear 200ms;
-  transition: all 200ms linear 200ms;
+  text-decoration: none;
+  -webkit-transition: color 200ms linear 200ms;
+  -moz-transition: color 200ms linear 200ms;
+  -o-transition: color 200ms linear 200ms;
+  transition: color 200ms linear 200ms;
 }
 
 a:hover {
   color: #C22350;
   text-decoration: none;
-  -webkit-transition: all 200ms linear 200ms;
-  -moz-transition: all 200ms linear 200ms;
-  -o-transition: all 200ms linear 200ms;
-  transition: all 200ms linear 200ms;
+  -webkit-transition: color 200ms linear 200ms;
+  -moz-transition: color 200ms linear 200ms;
+  -o-transition: color 200ms linear 200ms;
+  transition: color 200ms linear 200ms;
 }
 
 .transition {
