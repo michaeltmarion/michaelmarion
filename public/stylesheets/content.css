@@ -17,6 +17,8 @@ div#content div.container {
   }
 }
 
+/* Markdown Styling */
+
 div#content div.container div#post {
   padding-top: 6.50em;
   padding-bottom: 3.25em;
@@ -28,8 +30,23 @@ div#content div.container div#post h1 {
   margin-bottom: 1.20em;
 }
 
+div#content div.container div#post h2 {
+  font-size: 1.750em;
+  margin-top: 1.50em;
+  font-weight: 300;
+}
+
 div#content div.container div#post p {
   margin-top: 1.15em;
   font-size: 1.15em;
   line-height: 1.75em;
+}
+
+div#content div.container div#post blockquote {
+  border-left: 4px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.750);
+  padding-left: 1.500em;
+  margin-left: 0.250em;
+  font-size: 1.150em;
+  font-style: italic;
 }
