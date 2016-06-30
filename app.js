@@ -29,8 +29,7 @@ app.get('/', function(req, res) {
   client.getEntries().then(function (entries) {
     var posts = [];
     // Retrieve all entries.
-    for (var idx in entries) {
-      var entry = entries[idx];
+    entries.items.forEach(function (entry) {
       posts.push({
         'title'    : entry.fields.title,
         'day'      : day(new Date(entry.fields.date)),
