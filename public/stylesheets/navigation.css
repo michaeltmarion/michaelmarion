@@ -71,6 +71,8 @@ div#navigation div.posts ul li a div.date {
 
 div#navigation div.posts ul li a div.date-inner {
   align-self: center;
+  padding: 8px 14px 12px 14px;
+  border: 1px solid #FF2D55;
 }
 
 div#navigation div.posts ul li a div.date-inner h2 {

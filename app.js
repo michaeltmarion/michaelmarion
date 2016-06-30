@@ -29,7 +29,8 @@ app.get('/', function(req, res) {
   client.getEntries().then(function (entries) {
     var posts = [];
     // Retrieve all entries.
-    entries.items.forEach(function (entry) {
+    for (var idx in entries) {
+      var entry = entries[idx];
       posts.push({
         'title'    : entry.fields.title,
         'day'      : day(new Date(entry.fields.date)),
@@ -44,7 +45,8 @@ app.get('/', function(req, res) {
       'page' : 'Michael Marion',
       'posts': posts,
       'title': posts[0].title,
-      'date' : datify(posts[0].date),
+      'day'  : posts[0].day,
+      'month': posts[0].month,
       'body' : marked(posts[0].body)
     });
   });
@@ -72,7 +74,8 @@ app.get('/post/:id', function(req, res) {
       'page' : 'Michael Marion',
       'posts': posts,
       'title': content.title,
-      'date' : datify(content.date),
+      'day'  : content.day,
+      'month': content.month,
       'body' : marked(content.body)
     });
   });
@@ -121,13 +124,8 @@ var month = function(date) {
   return months[date.getMonth()];
 }
 
-var datify = function(created) {
-  var date = new Date(created);
-  var months = ['January', 'February', 'March',
-                'April', 'May', 'June', 'July',
-                'August', 'September', 'October',
-                'November', 'December'];
-  return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+var year = function(date) {
+  return date.getFullYear();
 }
 
 var find = function(posts, param) {
