@@ -98,6 +98,7 @@ div#navigation div.posts ul li a div.metadata div.title {
   flex-direction: column;
   justify-content: center;
   flex: 2;
+  padding-left: 8px;
 }
 
 div#navigation div.posts ul li a div.metadata div.title h1 {
