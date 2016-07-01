@@ -33,9 +33,9 @@ div#metadata-nameplate.invisible {
 
 div#navigation {
   height: 100%;
-  width: 100vw;
+  width: 100vh;
   position: fixed;
-  top: -100vw;
+  top: -100vh;
   background: #202020;
   color: #dadada;
   z-index: 2;
