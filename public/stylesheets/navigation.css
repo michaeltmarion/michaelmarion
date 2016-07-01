@@ -4,12 +4,12 @@ div.nameplate {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-metadata: center;
   text-align: center;
 }
 
 div.nameplate:hover {
   cursor: pointer;
+  color: #FF2D55;
 }
 
 div.nameplate h1 {
