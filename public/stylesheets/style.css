@@ -15,7 +15,6 @@ body {
 
 a {
   color: #FF2D55;
-  font-weight: 600;
   text-decoration: none;
   -webkit-transition: color 200ms linear 200ms;
   -moz-transition: color 200ms linear 200ms;
