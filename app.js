@@ -67,7 +67,6 @@ app.get('/post/:id', function(req, res) {
     });
     // Find the post to display as content.
     var content = find(posts, req.params.id);
-    console.log(content);
     // Render the response;
     res.render('post', {
       'page' : 'Michael Marion',
