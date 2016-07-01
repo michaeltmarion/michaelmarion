@@ -62,11 +62,12 @@ div#content div.container div#post p {
 }
 
 div#content div.container div#post blockquote {
-  border-left: 4px solid rgba(0, 0, 0, 0.15);
-  color: rgba(0, 0, 0, 0.750);
+  border-left: 4px solid rgba(0, 0, 0, 0.10);
+  color: rgba(0, 0, 0, 0.40);
   padding-left: 1.500em;
   margin-top: 1.75em;
   margin-left: 0.250em;
+  margin-bottom: 1.75em;
   font-size: 1.150em;
   font-style: italic;
 }
