@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #FF2D55;
+  color: #0076FF;
   text-decoration: none;
   -webkit-transition: color 200ms linear 200ms;
   -moz-transition: color 200ms linear 200ms;
@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #C22350;
+  color: #004EA8;
   text-decoration: none;
   -webkit-transition: color 200ms linear 200ms;
   -moz-transition: color 200ms linear 200ms;

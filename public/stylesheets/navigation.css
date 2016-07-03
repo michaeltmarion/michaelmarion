@@ -9,7 +9,7 @@ div.nameplate {
 
 div.nameplate:hover {
   cursor: pointer;
-  color: #FF2D55;
+  color: #0076FF;
 }
 
 div.nameplate h1 {
@@ -36,7 +36,7 @@ div#navigation {
   width: 100vw;
   position: fixed;
   top: -100vh;
-  background: #202020;
+  background: #1F1F21;
   color: #dadada;
   z-index: 2;
   overflow-y: scroll;
@@ -62,7 +62,7 @@ div#navigation div.posts ul li a:hover {
 }
 
 div#navigation div.posts ul li a div.date {
-  color: #FF2D55;
+  color: #0076FF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@ div#navigation div.posts ul li a div.date {
 div#navigation div.posts ul li a div.date-inner {
   align-self: center;
   padding: 8px 14px 12px 14px;
-  border: 1px solid #FF2D55;
+  border: 1px solid #0076FF;
 }
 
 div#navigation div.posts ul li a div.date-inner h2 {
