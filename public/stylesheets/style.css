@@ -14,16 +14,7 @@ body {
 }
 
 a {
-  color: #B89800;
-  text-decoration: none;
-  -webkit-transition: color 200ms linear 200ms;
-  -moz-transition: color 200ms linear 200ms;
-  -o-transition: color 200ms linear 200ms;
-  transition: color 200ms linear 200ms;
-}
-
-a:hover {
-  color: #756100;
+  color: #5856D6;
   text-decoration: none;
   -webkit-transition: color 200ms linear 200ms;
   -moz-transition: color 200ms linear 200ms;

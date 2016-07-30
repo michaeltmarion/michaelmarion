@@ -9,7 +9,7 @@ div.nameplate {
 
 div.nameplate:hover {
   cursor: pointer;
-  color: #B89800;
+  color: #5856D6;
 }
 
 div.nameplate h1 {
@@ -62,7 +62,7 @@ div#navigation div.posts ul li a:hover {
 }
 
 div#navigation div.posts ul li a div.date {
-  color: #B89800;
+  color: #5856D6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@ div#navigation div.posts ul li a div.date {
 div#navigation div.posts ul li a div.date-inner {
   align-self: center;
   padding: 8px 14px 12px 14px;
-  border: 1px solid #B89800;
+  border: 1px solid #5856D6;
 }
 
 div#navigation div.posts ul li a div.date-inner h2 {
