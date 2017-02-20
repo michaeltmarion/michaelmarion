@@ -44,9 +44,9 @@ html(class = 'no-js')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='../../stylesheets/reset.css')
+    link(rel='stylesheet', href='../../stylesheets/bulma.css')
+    link(rel='stylesheet', href='../../stylesheets/type.css')
     link(rel='stylesheet', href='../../stylesheets/style.css')
-    link(rel='stylesheet', href='../../stylesheets/navigation.css')
-    link(rel='stylesheet', href='../../stylesheets/content.css')
     block styles
     
   body
@@ -55,10 +55,8 @@ html(class = 'no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href = "http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
-    include partials/navigation
-    div#content
-      div.container
-        block content 
+    div.container
+      block content
 
     script(src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js")
     script.

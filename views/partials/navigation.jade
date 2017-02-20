@@ -1,18 +1,9 @@
-div#navigation.transition
-  div#nav-nameplate.nameplate.transition
-    h1 m
-  div.posts 
-    ul
+div#sidebar
+  div#nav
+    //- div#nav-nameplate.transition
+    //-   span#nameplate m
+    div#nav-posts 
       each post in posts
-        li
-          a.post(href = '/post/#{post.id}')
-            div.date
-              div.date-inner
-                h2 #{post.day}
-                h3 #{post.month}
-            div.metadata
-              div.title
-                h1 #{post.title}
-              //- div.snippet.hidden-xs.hidden-sm.hidden-md.hidden-xl
-              //-   p #{post.snippet}
-            
+        a.post(href = '/post/#{post.id}')
+          div.title #{post.title}
+          div.date #{post.day} #{post.month}
