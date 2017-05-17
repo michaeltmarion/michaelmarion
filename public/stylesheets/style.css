@@ -1,15 +1,13 @@
 body {
-  background-color: #F8F9FA;
-  color: #495057;
+  background: white;
 }
 
 div#post {
-  margin: 10.0rem 17.5rem;
+  margin: 10.0rem 12.5%;
 }
 
 div#post div#logo {
   display: flex;
-  margin: 5.0rem;
   justify-content: center;
 }
 
