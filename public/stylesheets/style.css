@@ -1,15 +1,26 @@
 html,
 body {
-  background: #F8F9FA;
-  color: #212529;
+  background: #212529;
+  color: #F1F3F5;
 }
 
 div.container {
   margin: 0 auto;
-  width: 960px;
+  padding: 5.0rem 0;
+  width: 768px;
+}
+h1 {
+  margin: 3.0rem 0;
+}
+
+h2 {
+  margin: 2.5rem 0;
 }
 
 p {
-  line-height: 28px;
   margin: 21px 0;
+}
+
+a {
+  text-decoration: none;
 }

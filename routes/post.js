@@ -22,8 +22,6 @@ function format(results) {
   results.items.forEach(function (entry) {
     posts.push({
       'title'    : entry.fields.title,
-      'day'      : day(new Date(entry.fields.date)),
-      'month'    : month(new Date(entry.fields.date)),
       'snippet'  : entry.fields.snippet,
       'body'     : marked(entry.fields.body),
       'id'       : entry.sys.id

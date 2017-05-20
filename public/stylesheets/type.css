@@ -1,12 +1,17 @@
 body {
   font-family: FrutigerLTPro-Roman;
+  font-weight: normal;
 }
 
 h1 {
+  font-family: FrutigerLTPro-Light;
+  font-weight: normal;
   font-size: 50px;
 }
 
 h2 {
+  font-family: FrutigerLTPro-Light;
+  font-weight: normal;
   font-size: 37px;
 }
 
@@ -22,15 +27,25 @@ h5 {
   font-size: 12px;
 }
 
+a {
+  color: #FFA94D;
+}
+
+a:hover,
+a:visited {
+  color: #E8590C;
+}
+
 p, blockquote,
 ol, ul,
 a, span {
   font-size: 21px;
+  line-height: 31px;
 }
 
 ol li,
 ul li {
-  border-left: 4px solid #868E96;
+  border-left: 2px solid #495057;
   margin: 0 0 1.0rem 0;
   padding: 0 0 0 1.0rem;
 }
