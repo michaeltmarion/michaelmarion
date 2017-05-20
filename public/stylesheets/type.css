@@ -1,55 +1,36 @@
-html, body {
-  font-family: FrutigerCE-Roman, -apple-system, sans-serif;
+body {
+  font-family: FrutigerLTPro-Roman;
 }
 
 h1 {
-  font-family: FrutigerCE-Bold;
-  font-size: 2.35rem;
-  font-weight: 700;
-  margin: 0 0 3.0rem 0;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  margin: 2.0rem 0 0 0;
+  font-size: 37px;
 }
 
 h3 {
-
+  font-size: 21px;
 }
 
-ol {
-  margin: 0 0 0 1.0rem;
+h4 {
+  font-size: 16px;
 }
 
-ul li, ol li {
-  border-left: 3px solid #ced4da;
-  display: block;
-  list-style: none;
-  line-height: 1.65rem;
+h5 {
+  font-size: 12px;
+}
+
+p, blockquote,
+ol, ul,
+a, span {
+  font-size: 21px;
+}
+
+ol li,
+ul li {
+  border-left: 4px solid #868E96;
   margin: 0 0 1.0rem 0;
-  padding: 0.5rem 0 0.5rem 1.0rem;
-  width: 80%;
-}
-
-p {
-  color: #343a40;
-  font-size: 1.05rem;
-  font-weight: 400;
-  line-height: 1.85rem;
-  margin: 1.0rem 0;
-}
-
-a {
-  color: #329AF0;
-}
-
-a:hover {
-  color: #228ae6;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #228ae6;
+  padding: 0 0 0 1.0rem;
 }

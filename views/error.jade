@@ -3,7 +3,9 @@ block styles
   link(rel = 'stylesheet', href = '/stylesheets/error.css')
 block scripts
 block content
-  h5= message
-    span.pull-right= error.status
-  div#stacktrace
-    pre #{error.stack}
+  div#error
+    div.message
+    h2= error.status
+    h3= message
+    div.stacktrace
+      pre #{error.stack}

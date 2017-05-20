@@ -1,22 +1,15 @@
+html,
 body {
-  background: white;
+  background: #F8F9FA;
+  color: #212529;
 }
 
-div#post {
-  margin: 10.0rem 12.5%;
+div.container {
+  margin: 0 auto;
+  width: 960px;
 }
 
-div#post div#logo {
-  display: flex;
-  justify-content: center;
-}
-
-div#post div#logo img {
-  opacity: 0.30;
-}
-
-@media only screen and (max-width: 500px) {
-  div#post {
-    margin: 1.0rem;
-  }
+p {
+  line-height: 28px;
+  margin: 21px 0;
 }
