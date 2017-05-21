@@ -1,5 +1,6 @@
 h1 {
   color: #495057;
+  font-weight: 300;
   margin: 5.0rem 0;
   padding: 0;
 }
@@ -25,11 +26,13 @@ div#posts div.post h2 {
 div#posts div.post h2 a {
   color: #495057;
   font-size: 32px;
+  font-weight: 300;
 }
 
 div#posts div.post p {
   color: #868E96;
-  margin: 0;
+  line-height: 24px;
+  margin: 0.25rem 0;
 }
 
 div#posts div.post p a{
