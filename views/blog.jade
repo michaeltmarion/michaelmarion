@@ -1,0 +1,15 @@
+extends layout
+
+block styles
+
+block scripts
+  link(rel='stylesheet', href='stylesheets/pages/blog.css')
+
+block content
+  h1 Latest Updates
+  div#posts
+    each post in posts
+      div.post
+        h2
+          a(href='/blog/#{post.id}') #{post.title}
+        p !{post.snippet}

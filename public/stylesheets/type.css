@@ -1,16 +1,15 @@
 body {
-  font-family: FrutigerLTPro-Roman;
+  font-family: FrutigerNextPro-Regular;
   font-weight: normal;
 }
 
 h1 {
-  font-family: FrutigerLTPro-Light;
+  font-family: FrutigerNextPro-Light;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 48px;
 }
 
 h2 {
-  font-family: FrutigerLTPro-Light;
   font-weight: normal;
   font-size: 37px;
 }
@@ -28,12 +27,15 @@ h5 {
 }
 
 a {
-  color: #FFA94D;
+  color: #329af0;
 }
 
-a:hover,
+a:hover {
+  color: #1862ab;
+}
+
 a:visited {
-  color: #E8590C;
+  color: #1c7cd6;
 }
 
 p, blockquote,
@@ -48,4 +50,102 @@ ul li {
   border-left: 2px solid #495057;
   margin: 0 0 1.0rem 0;
   padding: 0 0 0 1.0rem;
+}
+
+/* Font Classes */
+
+.FrutigerNextPro-Bold {
+	font-family: FrutigerNextPro-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Italic {
+	font-family: FrutigerNextPro-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Regular {
+	font-family: FrutigerNextPro-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-BoldIta {
+	font-family: FrutigerNextPro-BoldIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-LightIta {
+	font-family: FrutigerNextPro-LightIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Light {
+	font-family: FrutigerNextPro-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-HeavyIta {
+	font-family: FrutigerNextPro-HeavyIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-MediumIta {
+	font-family: FrutigerNextPro-MediumIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Heavy {
+	font-family: FrutigerNextPro-Heavy;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Medium {
+	font-family: FrutigerNextPro-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-UltraLt {
+	font-family: FrutigerNextPro-UltraLt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-BlackIta {
+	font-family: FrutigerNextPro-BlackIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-UltraLtIt {
+	font-family: FrutigerNextPro-UltraLtIt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-Black {
+	font-family: FrutigerNextPro-Black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-HeavyCn {
+	font-family: FrutigerNextPro-HeavyCn;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FrutigerNextPro-BoldCn {
+	font-family: FrutigerNextPro-BoldCn;
+	font-weight: normal;
+	font-style: normal;
 }

@@ -1,0 +1,37 @@
+h1 {
+  color: #495057;
+  margin: 5.0rem 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+div#posts {
+  margin: 5.0rem 0;
+}
+
+div#posts div.post {
+  margin: 3.0rem 0;
+}
+
+div#posts div.post h2 {
+  margin: 0;
+  padding: 0;
+}
+
+div#posts div.post h2 a {
+  color: #495057;
+  font-size: 32px;
+}
+
+div#posts div.post p {
+  color: #868E96;
+  margin: 0;
+}
+
+div#posts div.post p a{
+  color: #868E96;
+}

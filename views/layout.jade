@@ -8,13 +8,12 @@ html(class = 'no-js')
     meta(name = 'description', content = '')
     meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
     
-    script.
-      var customPath = '../../webfonts';
-    script(type="text/javascript" src="../..javascripts/webfonts.js")
-
     link(rel='stylesheet', href='../../stylesheets/reset.css')
+    link(rel='stylesheet', href='../../stylesheets/webfonts/webfonts.css')
     link(rel='stylesheet', href='../../stylesheets/type.css')
     link(rel='stylesheet', href='../../stylesheets/style.css')
+    
+    link(rel='stylesheet', href='../../stylesheets/partials/navigation.css')
     block styles
     
   body
@@ -23,6 +22,7 @@ html(class = 'no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href = "http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
+    include partials/navigation
     div.container
       block content
       

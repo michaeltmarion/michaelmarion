@@ -1,0 +1,26 @@
+div#splash-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: center;
+}
+
+div#splash {
+  height: 37.5%;
+  width: 75%;
+}
+
+div#splash h1 {
+  color: #495057;
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+div#splash p {
+  color: #868E96;
+  margin: 0;
+  padding: 0;
+}

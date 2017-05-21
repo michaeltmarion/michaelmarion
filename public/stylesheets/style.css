@@ -1,13 +1,13 @@
 html,
 body {
-  background: #212529;
-  color: #F1F3F5;
+  background: #F1F3F5;
+  color: #212529;
 }
 
 div.container {
   margin: 0 auto;
-  padding: 5.0rem 0;
-  width: 768px;
+  padding: 5.0rem 2.0rem;
+  max-width: 768px;
 }
 h1 {
   margin: 3.0rem 0;

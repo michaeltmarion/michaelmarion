@@ -6,29 +6,10 @@ var express = require('express'),
 IndexController.route('/')
   .get(function(req, res, next) {
     cms.getEntries().then(function (entries) {
-      var posts = format(entries);
-      res.render('post', {
+      res.render('index', {
         'page' : 'Michael Marion',
-        'posts': posts,
-        'title': posts[0].title,
-        'day'  : posts[0].day,
-        'month': posts[0].month,
-        'body' : marked(posts[0].body)
       });
     });
   });
-
-  function format(results) {
-    var posts = [];
-    results.items.forEach(function(entry) {
-      posts.push({
-        'title'    : entry.fields.title,
-        'snippet'  : entry.fields.snippet,
-        'body'     : marked(entry.fields.body),
-        'id'       : entry.sys.id
-      });
-    });
-    return posts;
-  }
 
   module.exports = IndexController;

@@ -1,0 +1,18 @@
+div#nav  {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 1.5rem 0;
+}
+
+div#nav a {
+  color: #868E96;
+  display: block;
+  font-family: FrutigerNextPro-Medium;
+  font-size: 14px;
+}
+
+div#nav a:hover {
+  color: #212529;
+}
