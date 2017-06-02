@@ -9,7 +9,6 @@ block content
   h1 Latest Updates
   div#posts
     each post in posts
-      div.post
-        h2
-          a(href='/blog/#{post.id}') #{post.title}
+      a.transition(href='/blog/post/#{post.id}')
+        h2 #{post.title}
         p !{post.snippet}

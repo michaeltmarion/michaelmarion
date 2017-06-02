@@ -7,11 +7,14 @@ div#nav  {
 }
 
 div#nav a {
+  border-radius: 0.25rem;
   color: #868E96;
   display: block;
   font-size: 14px;
+  padding: 0.25rem 1.0rem;
 }
 
 div#nav a:hover {
   color: #212529;
+  background: #DEE2E6;
 }

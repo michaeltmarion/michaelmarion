@@ -3,10 +3,13 @@ var express = require('express'),
     cms = require('../cms/cms'),
     PostController = express.Router();
 
+var Formatter = require('./util/format/blog-format'),
+    format = new Formatter();
+
 PostController.route('/')
   .get(function(req, res, next) {
-    cms.getEntries().then(function (entries) {
-      var posts = format(entries);
+    cms.getEntries().then(function(entries) {
+      var posts = format.posts(entries);
       res.render('blog', {
         'page' : 'Michael Marion',
         'posts': posts
@@ -14,10 +17,10 @@ PostController.route('/')
     });
   });
 
-PostController.route('/:id')
+PostController.route('/post/:id')
   .get(function(req, res, next) {
-    cms.getEntries().then(function(entries) {
-      var content = format(entries)[0];
+    cms.getEntry(req.params.id).then(function(entry) {
+      var content = format.post(entry);
       res.render('post', {
         'page' : 'Michael Marion',
         'title': content.title,
@@ -27,18 +30,5 @@ PostController.route('/:id')
       });
     });
   });
-
-function format(results) {
-  var posts = [];
-  results.items.forEach(function (entry) {
-    posts.push({
-      'title'    : entry.fields.title,
-      'snippet'  : entry.fields.snippet,
-      'body'     : marked(entry.fields.body),
-      'id'       : entry.sys.id
-    });
-  });
-  return posts;
-}
 
 module.exports = PostController;

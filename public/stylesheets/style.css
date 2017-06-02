@@ -24,3 +24,10 @@ p {
 a {
   text-decoration: none;
 }
+
+.transition {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}

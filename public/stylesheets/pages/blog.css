@@ -1,8 +1,7 @@
 h1 {
   color: #495057;
   font-weight: 300;
-  margin: 5.0rem 0;
-  padding: 0;
+  padding: 0 1.5rem;
 }
 
 p {
@@ -10,31 +9,34 @@ p {
   padding: 0;
 }
 
-div#posts {
-  margin: 5.0rem 0;
+div#posts a {
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
 }
 
-div#posts div.post {
-  margin: 3.0rem 0;
+div#posts a:hover {
+  background: #DEE2E6;
 }
 
-div#posts div.post h2 {
+div#posts a h2 {
   margin: 0;
   padding: 0;
 }
 
-div#posts div.post h2 a {
+div#posts a h2 {
   color: #495057;
   font-size: 32px;
   font-weight: 300;
 }
 
-div#posts div.post p {
+div#posts a p {
   color: #868E96;
   line-height: 24px;
   margin: 0.25rem 0;
 }
 
-div#posts div.post p a{
+div#posts a p a{
   color: #868E96;
 }
