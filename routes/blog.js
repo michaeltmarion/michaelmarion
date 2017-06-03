@@ -8,11 +8,13 @@ var Formatter = require('./util/format/blog-format'),
 
 PostController.route('/')
   .get(function(req, res, next) {
-    cms.getEntries().then(function(entries) {
-      var posts = format.posts(entries);
-      res.render('blog', {
-        'page' : 'Michael Marion',
-        'posts': posts
+    cms.getEntries({
+      order: '-sys.createdAt'
+    }).then(function(entries) {
+        var posts = format.posts(entries);
+        res.render('blog', {
+          'page' : 'Michael Marion',
+          'posts': posts
       });
     });
   });
