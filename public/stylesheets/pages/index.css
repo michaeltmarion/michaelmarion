@@ -12,7 +12,7 @@ div#splash {
 }
 
 div#splash h1 {
-  color: #495057;
+  color: #e9ecef;
   font-size: 42px;
   font-weight: 300;
   margin: 0;
@@ -21,7 +21,7 @@ div#splash h1 {
 }
 
 div#splash p {
-  color: #868E96;
+  color: #ced4da;
   margin: 0;
   padding: 0;
 }

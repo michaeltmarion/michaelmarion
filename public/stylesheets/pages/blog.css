@@ -1,5 +1,5 @@
 h1 {
-  color: #495057;
+  color: #f8f9fa;
   font-weight: 300;
   padding: 0 1.5rem;
 }
@@ -17,7 +17,7 @@ div#posts a {
 }
 
 div#posts a:hover {
-  background: #DEE2E6;
+  background: #495057;
 }
 
 div#posts a h2 {
@@ -26,17 +26,17 @@ div#posts a h2 {
 }
 
 div#posts a h2 {
-  color: #495057;
+  color: #e9ecef;
   font-size: 32px;
   font-weight: 300;
 }
 
 div#posts a p {
-  color: #868E96;
+  color: #e9ecef;
   line-height: 24px;
   margin: 0.25rem 0;
 }
 
 div#posts a p a{
-  color: #868E96;
+  color: #e9ecef;
 }
