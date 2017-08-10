@@ -13,9 +13,10 @@ html(class = 'no-js')
     link(rel='stylesheet', href='../../stylesheets/style.css')
     
     link(rel='stylesheet', href='../../stylesheets/partials/navigation.css')
+    link(rel='stylesheet', href='../../stylesheets/partials/toggle.css')
     block styles
     
-  body
+  body.transition
     //if lt IE 8
       p.chromeframe.
         You are using an <strong>outdated</strong> browser.
@@ -25,4 +26,7 @@ html(class = 'no-js')
     div.container
       block content
       
+      
+    script(type='text/javascript', src='../../javascripts/vendor/jquery.min.js')
+    script(type='text/javascript', src='../../javascripts/toggle.js')
     block scripts
