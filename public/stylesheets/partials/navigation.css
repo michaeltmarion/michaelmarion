@@ -10,11 +10,16 @@ div#nav a {
   border-radius: 0.25rem;
   color: #868E96;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 1px;
   padding: 0.25rem 1.0rem;
+  text-transform: uppercase;
 }
 
 div#nav a:hover {
   color: #adb5bd;
-  background: #495057;
+}
+
+body.dark div#nav a:hover {
+  color: #adb5bd;
 }

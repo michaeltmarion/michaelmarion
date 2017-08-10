@@ -41,7 +41,6 @@ p, blockquote,
 ol, ul,
 a, span {
   font-size: 21px;
-  line-height: 31px;
 }
 
 ol li,
@@ -49,102 +48,4 @@ ul li {
   border-left: 2px solid #495057;
   margin: 0 0 1.0rem 0;
   padding: 0 0 0 1.0rem;
-}
-
-/* Font Classes */
-
-.FrutigerNextPro-Bold {
-	font-family: FrutigerNextPro-Bold;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Italic {
-	font-family: FrutigerNextPro-Italic;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Regular {
-	font-family: FrutigerNextPro-Regular;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-BoldIta {
-	font-family: FrutigerNextPro-BoldIta;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-LightIta {
-	font-family: FrutigerNextPro-LightIta;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Light {
-	font-family: FrutigerNextPro-Light;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-HeavyIta {
-	font-family: FrutigerNextPro-HeavyIta;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-MediumIta {
-	font-family: FrutigerNextPro-MediumIta;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Heavy {
-	font-family: FrutigerNextPro-Heavy;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Medium {
-	font-family: FrutigerNextPro-Medium;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-UltraLt {
-	font-family: FrutigerNextPro-UltraLt;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-BlackIta {
-	font-family: FrutigerNextPro-BlackIta;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-UltraLtIt {
-	font-family: FrutigerNextPro-UltraLtIt;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-Black {
-	font-family: FrutigerNextPro-Black;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-HeavyCn {
-	font-family: FrutigerNextPro-HeavyCn;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.FrutigerNextPro-BoldCn {
-	font-family: FrutigerNextPro-BoldCn;
-	font-weight: normal;
-	font-style: normal;
 }
