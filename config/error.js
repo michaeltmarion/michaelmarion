@@ -9,9 +9,9 @@ module.exports = function(app) {
     app.use(function(err, req, res, next) {
       res.status(err.status || 500);
       if (res.status === 403 || res.status === 401) {
-        res.render('pages/login');
+        res.render('login');
       }
-      res.render('pages/error', {
+      res.render('error', {
         message: err.message,
         error: err
       });
@@ -21,9 +21,9 @@ module.exports = function(app) {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     if (res.status === 403 || res.status === 401) {
-      res.render('pages/login');
+      res.render('login');
     }
-    res.render('pages/error', {
+    res.render('error', {
       message: err.message,
       error: {}
     });
