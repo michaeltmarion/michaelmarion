@@ -5,11 +5,9 @@ var express = require('express'),
 
 IndexController.route('/')
   .get(function(req, res, next) {
-    cms.getEntries().then(function(entries) {
       res.render('index', {
         'page': 'Michael Marion'
       })
-    })
   })
 
 module.exports = IndexController;
