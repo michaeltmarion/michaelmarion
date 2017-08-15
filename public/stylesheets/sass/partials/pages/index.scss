@@ -1,10 +1,13 @@
+$splash-height: 80%;
+$splash-width: 88%;
+
 div.splash {
   display: flex;
   flex-direction: column;
-  height: 65%;
+  height: $splash-height;
   justify-content: center;
   margin: 0 auto;
-  width: 90%;
+  width: $splash-width;
 
   &.splash__inner {
 

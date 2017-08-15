@@ -1,3 +1,5 @@
+$post-p-font-size: 1.35rem;
+
 div.post__content {
 
   h1.post--title {
@@ -28,8 +30,9 @@ div.post__content {
   }
 
   p {
-    font-size: 1.15rem;
-    line-height: 1.95rem;
+    font-size: $post-p-font-size;
+    font-weight: $font-weight-regular;
+    line-height: 2.05rem;
     margin-top: 0.5rem;
 
     a {
@@ -39,6 +42,15 @@ div.post__content {
       &:hover {
         color: $oc-blue-7;
       }
+    }
+  }
+
+  ol {
+    margin: 2.55rem 0rem;
+
+    li {
+      font-size: $post-p-font-size;
+      margin: 1.15rem 0rem;
     }
   }
 

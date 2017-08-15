@@ -1,15 +1,30 @@
-nav {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: $container-width;
+$navigation-font-size: 0.80rem;
+$navigation-letter-spacing: 0px;
+$navigation-bottom-offset: 20px;
+$navigation-item-margin-top: 6px;
 
-  a {
-    display: block;
-    font-size: 85%;
-    letter-spacing: 1px;
-    padding: 2rem 0rem;
-    text-decoration: none;
-    text-transform: uppercase;
+div.navigation {
+  align-items: center;
+  display: flex;
+  height: 72px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: $container-width;
+
+    a {
+      display: block;
+      font-size: $navigation-font-size;
+      font-weight: $font-weight-semibold;
+      letter-spacing: $navigation-letter-spacing;
+      margin-top: $navigation-item-margin-top;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
 }

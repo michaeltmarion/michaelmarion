@@ -18,13 +18,9 @@ html(class='no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
-    include partials/navigation
     div.container
       block content
-      
-    label.switch
-      input#toggle(type='checkbox')
-      span.slider.round
+    include partials/navigation
       
     script(type='text/javascript', src='../../javascripts/vendor/jquery.min.js')
     script(type='text/javascript', src='../../javascripts/toggle.js')
