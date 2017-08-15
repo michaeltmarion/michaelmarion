@@ -7,6 +7,7 @@ module.exports = function(express, app) {
       src: path.join(__dirname, '../public/stylesheets/sass'),
       dest: path.join(__dirname, '../public/stylesheets'),
       debug: true,
+      force: true,
       outputStyle: 'compressed'
   }));
   // Note: you must place sass-middleware *before* `express.static` or else it will
