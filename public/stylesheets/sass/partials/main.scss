@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family;
+
+  &.light {
+    background-color: $main-light-bg;
+    color: $main-light-fg;
+  }
+
+  &.dark {
+    background-color: $main-dark-bg;
+    color: $main-dark-fg;
+  }
+}

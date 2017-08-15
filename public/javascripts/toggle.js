@@ -1,7 +1,7 @@
 $('#toggle').change(function(){
   if ($(this).prop('checked')) {
-      $(document.body).addClass('dark');
+      $(document.body).removeClass('light').addClass('dark');
   } else {
-      $(document.body).removeClass('dark');
+      $(document.body).removeClass('dark').addClass('light');
   }
 });
