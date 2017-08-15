@@ -5,6 +5,7 @@ div.post__content {
   h1.post--title {
     font-size: 3rem;
     font-weight: $font-weight-heavy;
+    padding-bottom: 2rem;
   }
 
   h2 {
@@ -32,8 +33,8 @@ div.post__content {
   p {
     font-size: $post-p-font-size;
     font-weight: $font-weight-regular;
-    line-height: 2.05rem;
-    margin-top: 0.5rem;
+    line-height: 2.15rem;
+    margin-top: 1.15rem;
 
     a {
       text-decoration: none;
@@ -49,8 +50,11 @@ div.post__content {
     margin: 2.55rem 0rem;
 
     li {
+      border-left: 4px solid $oc-gray-5;
       font-size: $post-p-font-size;
+      font-weight: $font-weight-regular;
       margin: 1.15rem 0rem;
+      padding: 0 0 0 1rem;
     }
   }
 
