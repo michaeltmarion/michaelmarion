@@ -12,8 +12,8 @@ div.splash {
   &.splash__inner {
 
     h1.splash--heading {
-      font-weight: $font-weight-bold;
       font-size: 5rem;
+      font-weight: $font-weight-heavy;
 
       @media #{$media-query-mobile-sm} {
         font-size: 3rem;
