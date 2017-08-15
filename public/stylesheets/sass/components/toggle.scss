@@ -1,7 +1,7 @@
 $position-offset: 14px;
 
-$switch-height: 22px;
-$switch-width: 34px;
+$switch-height: 24px;
+$switch-width: 36px;
 
 $slider-size: 14px;
 $slider-offset: 4px;
@@ -20,13 +20,13 @@ $slider-translate-distance: 12px;
 
 /* The slider */
 .slider {
+  border: 1px solid $oc-gray-5;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $main-dark-bg;
   -webkit-transition: $transition-duration;
   transition: $transition-duration;
 
@@ -37,22 +37,26 @@ $slider-translate-distance: 12px;
     width: $slider-size;
     left: $slider-offset;
     bottom: $slider-offset;
-    background-color: white;
     -webkit-transition: $transition-duration;
     transition: $transition-duration;
   }
 }
 
-input:checked + .slider {
-  background-color: $main-light-bg;
+body.light >> .slider {
+
+  &:before {
+    background-color: $main-light-fg;
+  }
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px $oc-white;
+body.dark >> .slider {
+
+  &:before {
+    background-color: $main-dark-fg;
+  }
 }
 
 input:checked + .slider:before {
-  background-color: $main-dark-bg;
   -webkit-transform: translateX($slider-translate-distance);
   -ms-transform: translateX($slider-translate-distance);
   transform: translateX($slider-translate-distance);
