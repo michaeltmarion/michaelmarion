@@ -1,0 +1,30 @@
+div.splash {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+
+  &.splash__inner {
+
+    h1.splash--heading {
+      font-weight: $font-weight-bold;
+      font-size: 5rem;
+
+      @media #{$media-query-mobile-sm} {
+        font-size: 3rem;
+      }
+    }
+
+    p.splash--body {
+      font-weight: $font-weight-regular;
+      font-size: 3rem;
+      height: 10%;
+
+      @media #{$media-query-mobile-sm} {
+        font-size: 1.15rem;
+      }
+    }
+  }
+}

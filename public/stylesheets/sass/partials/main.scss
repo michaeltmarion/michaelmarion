@@ -4,10 +4,26 @@ body {
   &.light {
     background-color: $main-light-bg;
     color: $main-light-fg;
+
+    a {
+      color: $main-light-fg;
+
+      &:hover {
+        color: black;
+      }
+    }
   }
 
   &.dark {
     background-color: $main-dark-bg;
     color: $main-dark-fg;
+
+    a {
+      color: $main-dark-fg;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
