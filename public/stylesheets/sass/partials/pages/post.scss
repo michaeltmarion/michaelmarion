@@ -1,0 +1,45 @@
+div.post__content {
+
+  h1.post--title {
+    font-size: 3rem;
+    font-weight: $font-weight-heavy;
+  }
+
+  h2 {
+    font-size: 2.15rem;
+    font-weight: $font-weight-bold;
+    margin-top: 1.95rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: $font-weight-semibold;
+    margin-top: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: $font-weight-semibold;
+    margin-top: 1.55rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.95rem;
+    margin-top: 0.5rem;
+
+    a {
+      text-decoration: none;
+      color: $oc-blue-5;
+
+      &:hover {
+        color: $oc-blue-7;
+      }
+    }
+  }
+
+}

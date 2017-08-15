@@ -2,9 +2,10 @@ extends layout
 block styles
 block scripts
 block content
-  h1 Latest Updates
-  div#posts
-    each post in posts
-      a.transition(href='/blog/post/#{post.id}')
-        h2 #{post.title}
-        p !{post.snippet}
+  div#container
+    h1 Latest Updates
+    div.posts
+      each post in posts
+        a.post__link.transition(href='/blog/post/#{post.id}')
+          h2.post__link.post--title #{post.title}
+          p.post__link.post--snippet !{post.snippet}

@@ -2,6 +2,7 @@
 
 @import 'modules/animation';
 @import 'modules/color';
+@import 'modules/layout';
 @import 'modules/media';
 @import 'modules/type';
 
@@ -10,3 +11,5 @@
 @import 'partials/main';
 @import 'partials/navigation';
 @import 'partials/pages/index';
+@import 'partials/pages/blog';
+@import 'partials/pages/post';

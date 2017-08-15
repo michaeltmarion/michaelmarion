@@ -1,5 +1,6 @@
 body {
   font-family: $font-family;
+  font-weight: $font-weight-regular;
 
   &.light {
     background-color: $main-light-bg;
@@ -25,5 +26,11 @@ body {
         color: white;
       }
     }
+  }
+
+  div#container {
+    width: $container-width;
+    margin: 0 auto;
+    padding: 5rem 0 5rem 0;
   }
 }
