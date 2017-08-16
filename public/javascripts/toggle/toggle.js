@@ -7,6 +7,7 @@ if (read(NAME) == DARK) {
   $('#toggle').prop('checked', true);
 } else {
   $(document.body).removeClass('dark').addClass('light');
+  $('#toggle').prop('checked', false);
 }
 
 $('#toggle').change(function(){

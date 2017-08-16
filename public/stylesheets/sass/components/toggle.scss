@@ -20,7 +20,6 @@ $slider-translate-distance: 12px;
 
 /* The slider */
 .slider {
-  border: 1px solid $oc-gray-5;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -43,6 +42,7 @@ $slider-translate-distance: 12px;
 }
 
 body.light >> .slider {
+  border: 1px solid $main-light-fg;
 
   &:before {
     background-color: $main-light-fg;
@@ -50,6 +50,7 @@ body.light >> .slider {
 }
 
 body.dark >> .slider {
+  border: 1px solid $main-dark-fg;
 
   &:before {
     background-color: $main-dark-fg;
