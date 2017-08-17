@@ -17,13 +17,17 @@ div.navigation {
     margin: 0 auto;
     width: $container-width;
 
-    a {
+    a.nav__item {
       display: block;
       font-size: $navigation-font-size;
       font-weight: $font-weight-semibold;
       letter-spacing: $navigation-letter-spacing;
       margin-top: $navigation-item-margin-top;
       text-decoration: none;
+
+      span.nav--item-text {
+        padding: 0 0 0 0.75rem;
+      }
     }
   }
 }

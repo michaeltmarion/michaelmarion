@@ -1,7 +1,20 @@
 div.navigation.transition
   nav
-    a.transition(href='/') Home
-    a.transition(href='/blog') Blog
+    a.transition.nav__item(href='/') 
+      i.fa.fa-home
+      span.nav__item.nav--item-text Home
+    a.transition.nav__item(href='/blog') 
+      i.fa.fa-pencil
+      span.nav__item.nav--item-text Blog
     label.switch
       input#toggle(type='checkbox')
       span.slider.round
+    a.transition.nav__item(href='/social/twitter') 
+      i.fa.fa-twitter
+      //- span.nav__item.nav--item-text Blog
+    a.transition.nav__item(href='/social/instagram') 
+      i.fa.fa-instagram
+      //- span.nav__item.nav--item-text Blog
+    a.transition.nav__item(href='/social/linkedin') 
+      i.fa.fa-linkedin
+      //- span.nav__item.nav--item-text Blog
