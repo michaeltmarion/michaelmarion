@@ -39,7 +39,7 @@ body {
   div.container {
     width: $container-width;
     margin: 0 auto;
-    padding: 5rem 0 5rem 0;
+    padding: 10rem 0 5rem 0;
 
     @media #{$media-query-mobile-sm} {
       width: $container-width-sm;

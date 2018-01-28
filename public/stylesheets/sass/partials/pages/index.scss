@@ -6,8 +6,7 @@ div.splash {
   flex-direction: column;
   height: $splash-height;
   justify-content: center;
-  margin: 0 auto;
-  width: $splash-width;
+  width: $container-width;
 
   &.splash__inner {
 
