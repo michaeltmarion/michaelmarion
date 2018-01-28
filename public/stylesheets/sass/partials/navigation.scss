@@ -7,26 +7,32 @@ div.navigation {
   align-items: center;
   display: flex;
   height: 72px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     width: $container-width;
 
-    a.nav__item {
-      display: block;
-      font-size: $navigation-font-size;
-      font-weight: $font-weight-semibold;
-      letter-spacing: $navigation-letter-spacing;
-      margin-top: $navigation-item-margin-top;
-      text-decoration: none;
+    div.nav__items {
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
+      width: 50%;
 
-      span.nav--item-text {
-        padding: 0 0 0 0.75rem;
+      a.nav__item {
+        display: block;
+        font-size: $navigation-font-size;
+        font-weight: $font-weight-semibold;
+        letter-spacing: $navigation-letter-spacing;
+        margin-top: $navigation-item-margin-top;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span.nav--item {
+          padding: 0 0 0 0.75rem;
+        }
       }
     }
   }
