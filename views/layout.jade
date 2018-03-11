@@ -16,6 +16,8 @@ html(class='no-js')
     
     link(rel='stylesheet', href='/style.css')
     
+    script(type='text/javascript', src='../../javascripts/vendor/jquery.min.js')
+    
     block styles
     
   body.transition
@@ -24,10 +26,10 @@ html(class='no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
-    include partials/navigation
-    div#container.container
-      block content
+    div.grid-container
+      div.grid-x.grid-margin-x
+        include partials/navigation
+        block content
       
-    script(type='text/javascript', src='../../javascripts/vendor/jquery.min.js')
     script(type='text/javascript', src='../../javascripts/toggle/toggle.js')
     block scripts
