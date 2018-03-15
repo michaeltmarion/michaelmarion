@@ -1,13 +1,15 @@
 @import 'reset/reset';
-@import 'foundation';
+
+@import 'node_modules/open-color/open-color.scss';
 
 @import 'modules/animation';
-@import 'modules/color';
-@import 'modules/layout';
 @import 'modules/media';
 @import 'modules/type';
+@import 'modules/variables';
 
 @import 'components/toggle';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 @import 'partials/main';
 @import 'partials/navigation';

@@ -4,7 +4,7 @@ var path = require('path');
 var options = {
     src: path.join(__dirname, '../public/stylesheets/sass'),
     dest: path.join(__dirname, '../public/stylesheets'),
-    includePaths: [path.join(__dirname, '../node_modules/foundation-sites/assets/')],
+    includePaths: [path.join(__dirname, '../node_modules/bootstrap/')],
     debug: false,
     force: true,
     outputStyle: 'compressed'

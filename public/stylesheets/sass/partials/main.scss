@@ -1,14 +1,8 @@
 body {
-  font-family: $font-family;
-  font-weight: $font-weight-regular;
 
   &.light {
     background-color: $main-light-bg;
     color: $main-light-fg;
-
-    div.navigation {
-      background-color: $main-light-bg;
-    }
 
     a {
       color: $main-light-fg;
@@ -22,10 +16,6 @@ body {
   &.dark {
     background-color: $main-dark-bg;
     color: $main-dark-fg;
-
-    div.navigation {
-      background-color: $main-dark-bg;
-    }
 
     a {
       color: $main-dark-fg;

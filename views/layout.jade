@@ -26,10 +26,12 @@ html(class='no-js')
         You are using an <strong>outdated</strong> browser.
         Please <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience.
-    div.grid-container
-      div.grid-x.grid-margin-x
-        include partials/navigation
-        block content
+    div.container
+      include partials/navigation
+      block content
+    label.switch
+      input#toggle(type='checkbox')
+      span.slider.round
       
     script(type='text/javascript', src='../../javascripts/toggle/toggle.js')
     block scripts

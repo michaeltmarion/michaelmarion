@@ -9,8 +9,10 @@ $slider-translate-distance: 12px;
 
 /* The switch - the box around the slider */
 .switch {
+  bottom: 4px;
   height: $switch-height;
-  position: relative;
+  left: 8px;
+  position: absolute;
   width: $switch-width;
 
   input {
