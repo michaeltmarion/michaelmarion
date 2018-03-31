@@ -1,0 +1,12 @@
+div#posts {
+  margin-top: 4.25rem;
+
+  a.post__link {
+    display: block;
+    margin-top: 2.25rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

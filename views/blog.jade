@@ -3,8 +3,7 @@ block styles
 block scripts
 block content
   div.container
-    h1.display-4 Latest Updates
-    div.posts
+    div#posts
       each post in posts
         a.post__link.transition(href='/blog/post/#{post.id}')
           h2.post__link.post--title #{post.title}
